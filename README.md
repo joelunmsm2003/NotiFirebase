@@ -1,38 +1,24 @@
 FORMAT: 1A
 
-# PeruCall
+# Polls
 
-PeruCall es una colleccion de APIS para la gestion de un marcador progresivo y predictivo
+Polls is a simple API allowing consumers to view polls and vote in them.
 
-# Group PeruCall
+## Questions Collection [/questions]
 
-Recursos relacionados 
-
-## Empresa Collection [/empresas]
-
-### Listado de Empresas [GET]
+### List All Questions [GET]
 
 + Response 200 (application/json)
 
-    [
         {
-            mascaras__tipo: "Externa",
-            url: "http://itconser.tk",
-            mail: "it@xiencias.org",
-            licencias: "10",
-            nombre: "XIENCIAS",
-            contacto: "55558",
-            telefono: 3890866,
-            id: 77
-        },
-        {
-            mascaras__tipo: "Interna",
-            url: "",
-            mail: "rleon@colecta.com",
-            licencias: "2",
-            nombre: "COLECTA",
-            contacto: "Rosa Leon",
-            telefono: 45454545,
-            id: 73
+            "question": "Favourite programming language?",
+            "choices": [
+                {
+                    "choice": "Swift",
+                    "votes": 2048
+                }, {
+                    "choice": "Python",
+                    "votes": 1024
+                }
+            ]
         }
-    ]
